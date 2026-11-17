@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+index/
+.claude/hillclimb/**/traces/
+.claude/hillclimb/**/report.html
+.claude/hillclimb/**/trajectory/
+.DS_Store

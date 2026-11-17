@@ -1,0 +1,13 @@
+{
+  "flow": "repo-qa",
+  "description": "RAG assistant over the qa-automation-framework docs and a Kubernetes runbook",
+  "metrics": [
+    {"id": "correct", "label": "Correct", "kind": "binary"},
+    {"id": "grounded", "label": "Grounded", "kind": "binary"},
+    {"id": "abstain_ok", "label": "Refusal OK", "kind": "binary"},
+    {"id": "retrieval_hit", "label": "Recall@5", "kind": "binary"},
+    {"id": "cited_ok", "label": "Cited right", "kind": "binary"}
+  ],
+  "perf_fields": ["latency_s"],
+  "prices": {"claude-opus-5-5": {"in": 4.0, "out": 20.0}, "claude-sonnet-5-5": {"in": 2.0, "out": 10.0}}
+}
